@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Foodie - Food Delivery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            foodie
+        </div>
+
+        <div class="location">
+            📍
+            <span>Madanapalle</span>
+            <span class="arrow">⌄</span>
+        </div>
+
+        <div class="search-box">
+            🔍
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for restaurant, cuisine or a dish"
+            >
+        </div>
+
+        <div class="nav-links">
+            <button>Log in</button>
+            <button>Sign up</button>
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Discover the best food & drinks</h1>
+
+            <p>
+                Order food from your favourite restaurants near you
+            </p>
+
+            <div class="hero-search">
+
+                <div class="hero-location">
+                    📍 Madanapalle
+                </div>
+
+                <div class="hero-divider"></div>
+
+                <div class="hero-input">
+                    🔍
+                    <input
+                        type="text"
+                        placeholder="Search for restaurant or dish"
+                        id="heroSearch"
+                    >
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ORDER OPTIONS -->
+    <section class="order-section">
+
+        <div class="order-card">
+
+            <div class="order-image delivery-img">
+                <span>🍔</span>
+            </div>
+
+            <div>
+                <h2>Order Online</h2>
+                <p>Stay home and order to your doorstep</p>
+            </div>
+
+        </div>
+
+
+        <div class="order-card">
+
+            <div class="order-image dining-img">
+                <span>🍽️</span>
+            </div>
+
+            <div>
+                <h2>Dining</h2>
+                <p>View the city's favourite dining spots</p>
+            </div>
+
+        </div>
+
+
+        <div class="order-card">
+
+            <div class="order-image night-img">
+                <span>🥂</span>
+            </div>
+
+            <div>
+                <h2>Nightlife & Clubs</h2>
+                <p>Explore the city's nightlife</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+    <section class="container">
+
+        <h2 class="section-title">
+            Popular cuisines
+        </h2>
+
+        <div class="categories">
+
+            <div class="category">
+                <div class="category-img">🍕</div>
+                <p>Pizza</p>
+            </div>
+
+            <div class="category">
+                <div class="category-img">🍔</div>
+                <p>Burgers</p>
+            </div>
+
+            <div class="category">
+                <div class="category-img">🍗</div>
+                <p>Chicken</p>
+            </div>
+
+            <div class="category">
+                <div class="category-img">🍜</div>
+                <p>Noodles</p>
+            </div>
+
+            <div class="category">
+                <div class="category-img">🍛</div>
+                <p>Biryani</p>
+            </div>
+
+            <div class="category">
+                <div class="category-img">🥗</div>
+                <p>Healthy</p>
+            </div>
+
+            <div class="category">
+                <div class="category-img">🍰</div>
+                <p>Desserts</p>
+            </div>
+
+            <div class="category">
+                <div class="category-img">☕</div>
+                <p>Coffee</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESTAURANTS -->
+    <section class="restaurants container">
+
+        <div class="restaurant-header">
+
+            <div>
+                <h2 class="section-title">
+                    Best restaurants near you
+                </h2>
+
+                <p>
+                    Explore top-rated restaurants in your area
+                </p>
+            </div>
+
+            <button class="view-all">
+                View all →
+            </button>
+
+        </div>
+
+
+        <div class="restaurant-grid" id="restaurantGrid">
+
+            <!-- CARD 1 -->
+            <div class="restaurant-card">
+
+                <div class="restaurant-image image1">
+
+                    <span class="offer">
+                        40% OFF
+                    </span>
+
+                    <span class="heart">
+                        ♡
+                    </span>
+
+                </div>
+
+                <div class="restaurant-info">
+
+                    <div class="restaurant-name">
+                        <h3>Spice Garden</h3>
+
+                        <span class="rating">
+                            4.4 ★
+                        </span>
+                    </div>
+
+                    <p>North Indian, Biryani</p>
+
+                    <div class="restaurant-details">
+                        <span>₹250 for two</span>
+                        <span>30 min</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+            <div class="restaurant-card">
+
+                <div class="restaurant-image image2">
+
+                    <span class="offer">
+                        30% OFF
+                    </span>
+
+                    <span class="heart">
+                        ♡
+                    </span>
+
+                </div>
+
+                <div class="restaurant-info">
+
+                    <div class="restaurant-name">
+                        <h3>Urban Cafe</h3>
+
+                        <span class="rating">
+                            4.6 ★
+                        </span>
+                    </div>
+
+                    <p>Cafe, Fast Food, Desserts</p>
+
+                    <div class="restaurant-details">
+                        <span>₹300 for two</span>
+                        <span>25 min</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+            <div class="restaurant-card">
+
+                <div class="restaurant-image image3">
+
+                    <span class="offer">
+                        50% OFF
+                    </span>
+
+                    <span class="heart">
+                        ♡
+                    </span>
+
+                </div>
+
+                <div class="restaurant-info">
+
+                    <div class="restaurant-name">
+                        <h3>Royal Biryani</h3>
+
+                        <span class="rating">
+                            4.7 ★
+                        </span>
+                    </div>
+
+                    <p>Biryani, Mughlai, Indian</p>
+
+                    <div class="restaurant-details">
+                        <span>₹350 for two</span>
+                        <span>35 min</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 4 -->
+            <div class="restaurant-card">
+
+                <div class="restaurant-image image4">
+
+                    <span class="offer">
+                        20% OFF
+                    </span>
+
+                    <span class="heart">
+                        ♡
+                    </span>
+
+                </div>
+
+                <div class="restaurant-info">
+
+                    <div class="restaurant-name">
+                        <h3>Burger House</h3>
+
+                        <span class="rating">
+                            4.3 ★
+                        </span>
+                    </div>
+
+                    <p>Burgers, Fast Food, Beverages</p>
+
+                    <div class="restaurant-details">
+                        <span>₹200 for two</span>
+                        <span>20 min</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 5 -->
+            <div class="restaurant-card">
+
+                <div class="restaurant-image image5">
+
+                    <span class="offer">
+                        25% OFF
+                    </span>
+
+                    <span class="heart">
+                        ♡
+                    </span>
+
+                </div>
+
+                <div class="restaurant-info">
+
+                    <div class="restaurant-name">
+                        <h3>Andhra Spice</h3>
+
+                        <span class="rating">
+                            4.5 ★
+                        </span>
+                    </div>
+
+                    <p>Andhra, South Indian, Meals</p>
+
+                    <div class="restaurant-details">
+                        <span>₹220 for two</span>
+                        <span>28 min</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 6 -->
+            <div class="restaurant-card">
+
+                <div class="restaurant-image image6">
+
+                    <span class="offer">
+                        35% OFF
+                    </span>
+
+                    <span class="heart">
+                        ♡
+                    </span>
+
+                </div>
+
+                <div class="restaurant-info">
+
+                    <div class="restaurant-name">
+                        <h3>Pizza Point</h3>
+
+                        <span class="rating">
+                            4.2 ★
+                        </span>
+                    </div>
+
+                    <p>Pizza, Italian, Fast Food</p>
+
+                    <div class="restaurant-details">
+                        <span>₹400 for two</span>
+                        <span>32 min</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <p class="no-results" id="noResults">
+            No restaurants found.
+        </p>
+
+    </section>
+
+
+    <!-- COLLECTIONS -->
+    <section class="collections">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Collections
+            </h2>
+
+            <p class="collection-subtitle">
+                Explore curated lists of the best restaurants
+            </p>
+
+
+            <div class="collection-grid">
+
+                <div class="collection-card collection1">
+
+                    <div>
+                        <h3>Trending This Week</h3>
+                        <p>12 Places →</p>
+                    </div>
+
+                </div>
+
+
+                <div class="collection-card collection2">
+
+                    <div>
+                        <h3>Best Biryani</h3>
+                        <p>18 Places →</p>
+                    </div>
+
+                </div>
+
+
+                <div class="collection-card collection3">
+
+                    <div>
+                        <h3>Romantic Dining</h3>
+                        <p>10 Places →</p>
+                    </div>
+
+                </div>
+
+
+                <div class="collection-card collection4">
+
+                    <div>
+                        <h3>Budget Friendly</h3>
+                        <p>25 Places →</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- APP SECTION -->
+    <section class="app-section">
+
+        <div class="app-content">
+
+            <div class="phone">
+                📱
+            </div>
+
+            <div>
+
+                <h2>
+                    Get the Foodie app
+                </h2>
+
+                <p>
+                    Order food faster and get exclusive offers
+                    on the app.
+                </p>
+
+                <div class="download-buttons">
+
+                    <button>
+                        ▶ Google Play
+                    </button>
+
+                    <button>
+                         App Store
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <h2>foodie</h2>
+
+                <p>
+                    Discover the best food around you.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Company</h3>
+
+                <a href="#">About us</a>
+                <a href="#">Careers</a>
+                <a href="#">Contact us</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>For Restaurants</h3>
+
+                <a href="#">Partner with us</a>
+                <a href="#">Business App</a>
+                <a href="#">Restaurant Login</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Learn More</h3>
+
+                <a href="#">Privacy</a>
+                <a href="#">Security</a>
+                <a href="#">Terms</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Social Links</h3>
+
+                <div class="socials">
+
+                    <span>f</span>
+                    <span>𝕏</span>
+                    <span>◎</span>
+                    <span>in</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Foodie. All rights reserved.
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

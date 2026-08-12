@@ -1,0 +1,753 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #1c1c1c;
+    background: #ffffff;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0 7%;
+    background: white;
+    border-bottom: 1px solid #eeeeee;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 800;
+    font-style: italic;
+    color: #e23744;
+}
+
+.location {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: #555;
+    white-space: nowrap;
+}
+
+.arrow {
+    font-size: 20px;
+}
+
+.search-box {
+    flex: 1;
+    max-width: 550px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 18px;
+    background: #f8f8f8;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 14px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+}
+
+.nav-links button {
+    border: none;
+    background: none;
+    font-size: 15px;
+    cursor: pointer;
+    color: #555;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    height: 430px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("https://images.unsplash.com/photo-1504674900247-0877df9cc836")
+        center/cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    color: white;
+    width: 90%;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-search {
+    background: white;
+    width: 650px;
+    max-width: 100%;
+    height: 60px;
+    margin: auto;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    color: #555;
+    text-align: left;
+}
+
+.hero-location {
+    padding: 0 20px;
+    white-space: nowrap;
+}
+
+.hero-divider {
+    height: 30px;
+    width: 1px;
+    background: #ddd;
+}
+
+.hero-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+    flex: 1;
+}
+
+.hero-input input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+}
+
+
+/* =========================
+   ORDER SECTION
+========================= */
+
+.order-section {
+    width: 86%;
+    max-width: 1200px;
+    margin: 35px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.order-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.order-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.order-image {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+}
+
+.delivery-img {
+    background: #ffe6e8;
+}
+
+.dining-img {
+    background: #fff0d9;
+}
+
+.night-img {
+    background: #e8e6ff;
+}
+
+.order-card h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.order-card p {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    width: 86%;
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+.section-title {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.collection-subtitle {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   CATEGORIES
+========================= */
+
+.categories {
+    display: flex;
+    gap: 35px;
+    overflow-x: auto;
+    padding: 15px 5px;
+}
+
+.category {
+    min-width: 105px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.category-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff1f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.category:hover .category-img {
+    transform: scale(1.08);
+}
+
+.category p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/* =========================
+   RESTAURANTS
+========================= */
+
+.restaurant-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 25px;
+}
+
+.restaurant-header p {
+    color: #777;
+    margin-top: 5px;
+}
+
+.view-all {
+    border: none;
+    background: none;
+    color: #e23744;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.restaurant-card {
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-5px);
+}
+
+.restaurant-image {
+    height: 220px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 12px;
+}
+
+.image1 {
+    background-image:
+        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4");
+}
+
+.image2 {
+    background-image:
+        url("https://images.unsplash.com/photo-1552566626-52f8b828add9");
+}
+
+.image3 {
+    background-image:
+        url("https://images.unsplash.com/photo-1563379091339-03246963d96c");
+}
+
+.image4 {
+    background-image:
+        url("https://images.unsplash.com/photo-1568901346375-23c9450c58cd");
+}
+
+.image5 {
+    background-image:
+        url("https://images.unsplash.com/photo-1547592180-85f173990554");
+}
+
+.image6 {
+    background-image:
+        url("https://images.unsplash.com/photo-1574071318508-1cdbab80d002");
+}
+
+.offer {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: #256fef;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.heart {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    background: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.restaurant-info {
+    padding: 12px 3px;
+}
+
+.restaurant-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.restaurant-name h3 {
+    font-size: 18px;
+}
+
+.rating {
+    background: #24963f;
+    color: white;
+    padding: 4px 7px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.restaurant-info > p {
+    color: #777;
+    margin: 7px 0;
+    font-size: 14px;
+}
+
+.restaurant-details {
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+    font-size: 13px;
+}
+
+.no-results {
+    display: none;
+    text-align: center;
+    color: #777;
+    margin-top: 30px;
+}
+
+
+/* =========================
+   COLLECTIONS
+========================= */
+
+.collections {
+    background: #fff8f8;
+    padding: 50px 0;
+}
+
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.collection-card {
+    height: 280px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    padding: 20px;
+    color: white;
+}
+
+.collection-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.8)
+    );
+}
+
+.collection-card div {
+    position: relative;
+    z-index: 2;
+}
+
+.collection-card h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.collection-card p {
+    font-size: 14px;
+}
+
+.collection1 {
+    background-image:
+        url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f");
+}
+
+.collection2 {
+    background-image:
+        url("https://images.unsplash.com/photo-1589302168068-964664d93dc0");
+}
+
+.collection3 {
+    background-image:
+        url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f");
+}
+
+.collection4 {
+    background-image:
+        url("https://images.unsplash.com/photo-1547592180-85f173990554");
+}
+
+
+/* =========================
+   APP SECTION
+========================= */
+
+.app-section {
+    background: #fff1f2;
+    padding: 60px 8%;
+}
+
+.app-content {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.phone {
+    font-size: 130px;
+}
+
+.app-content h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.app-content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.download-buttons button {
+    background: #111;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #202020;
+    color: white;
+    padding: 50px 8% 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr repeat(4, 1fr);
+    gap: 40px;
+}
+
+.footer-brand h2 {
+    color: #e23744;
+    font-size: 30px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    color: #aaa;
+    line-height: 1.6;
+}
+
+footer h3 {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+footer a {
+    display: block;
+    color: #aaa;
+    text-decoration: none;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+}
+
+.socials span {
+    width: 35px;
+    height: 35px;
+    background: #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright {
+    border-top: 1px solid #444;
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+    color: #888;
+    font-size: 13px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 0 4%;
+        gap: 15px;
+    }
+
+    .location {
+        display: none;
+    }
+
+    .restaurant-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .collection-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .order-section {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: auto;
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .search-box {
+        order: 3;
+        flex-basis: 100%;
+    }
+
+    .nav-links {
+        margin-left: auto;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-search {
+        height: auto;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-location {
+        padding: 15px;
+    }
+
+    .hero-divider {
+        width: 100%;
+        height: 1px;
+    }
+
+    .hero-input {
+        padding: 15px;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .restaurant-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .collection-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .restaurant-header {
+        align-items: start;
+    }
+
+    .view-all {
+        display: none;
+    }
+
+    .app-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .phone {
+        font-size: 100px;
+    }
+
+    .download-buttons {
+        justify-content: center;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+}
