@@ -36,6 +36,8 @@ The project is built using **HTML, CSS, and JavaScript** and focuses on creating
 | Unsplash | Food images |
 
 ---
+## Working model link
+https://karrivinay.github.io/foodie/
 
 ## 📂 Project Structure
 
